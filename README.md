@@ -17,8 +17,8 @@ pip install numero_nome
 ## Usage
 
 ```python
-from numero_nome import entra_nome, processamento, significado
-significado.significa_num(processamento.vetor_numero())
+from numero_nome import processamento
+processamento.significa_num(processamento.vetor_numero())
 ```
 
 ## Author
