@@ -1,4 +1,14 @@
-import entra_nome
+def nome():
+    '''
+    - Solicita a entrada do nome completo a ser analizado;
+    - Transforma o nome em um vetor de letras maiusculas.
+    '''
+    # entrada do nome completo
+    print("Digite o nome completo:")
+    # tranformação do nome em um vetor de letras
+    nome = input().replace(" ", "").upper()
+
+    return list(nome)
 
 def letra_valor():
     '''
@@ -31,7 +41,7 @@ def vetor_numero():
     11, 22 e 33.
     '''
     # criação do vetor numérico relacionando ao vetor do nome
-    num = list(map(lambda l: letra_valor()[l], entra_nome.nome()))
+    num = list(map(lambda l: letra_valor()[l], nome()))
     num_soma = str(sum(num))
 
     # redução do valor
